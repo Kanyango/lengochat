@@ -1,0 +1,35 @@
+
+    <div class="ui grid container">
+        <div class="row">
+            <div class="ui fluid card">
+                
+                
+                <div class="content">
+                    
+                    <div class="ui middle aligned selection list">
+                        {{#each products}}
+                      
+                          <div class="item">
+                                <div class="right floated content">
+                                    <a class="ui blue button" role="button" href="/add-to-cart/{{ this._id }}"><i class="cart plus icon"></i></a>
+                                  </div>
+                                <div class="ui small image">
+                                  <img src="{{ this.image_url }}" >
+                                </div>
+                                
+                                <div class="content">
+                                  <div class="header">{{ this.title }}</div>
+                                </div>
+                          </div>
+                    
+                        {{/each}}
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+    </div>
