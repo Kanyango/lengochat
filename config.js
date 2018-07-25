@@ -2,8 +2,8 @@ exports.oauth = {
 
 	'facebook' :{
 
-		'clientID'    : '166280357355680',
-		'clientSecret': '06449e3dfc5b6459fd0ade360736ee35',
+		'clientID'    : '194397384589672',
+		'clientSecret': 'dbb3594412da3a6db8aa12261d304500',
 		'callbackURL' : 'https://lengochat.herokuapp.com/auth/facebook/callback/'
 		//'callbackURL' : 'http://localhost:7000/oauth/facebook/callback'
 	},
