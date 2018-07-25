@@ -13,7 +13,7 @@ var passport = require('passport');
 
 // view engine setup
 app.config = config;
-mongoose.connect('mongodb://localhost:27017/storeDB');
+mongoose.connect('mongodb://karis:karisBMW760@ds247121.mlab.com:47121/lengodb');
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', '.hbs');
