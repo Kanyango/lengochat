@@ -31,9 +31,9 @@ app.use(cookieParser());
 //  cookie: { maxAge: 180 * 60 * 1000 }
 //}));
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(passport.initialize());
 //app.use('/', indexRouter)(app, passport);
-require('./routes/index.js')(app, passport);
+require('./routes/index')(app, passport);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
